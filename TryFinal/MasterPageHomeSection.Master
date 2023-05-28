@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageHomeSection.master.cs" Inherits="TryFinal.MasterPageHomeSection" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Home</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleCss/MasterPageHomeSection.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0af1008248.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Game Store</label>
+            <ul>
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="Login.aspx">LOGIN</a></li>
+                <li><a href="Shop.aspx">SHOP</a></li>
+                <li><a href="Feedback.aspx">FEEDBACK</a></li>
+            </ul>
+        </nav>
+        <div class="banner"></div>
+                <div class="content">
+                    <h1>Welcome</h1>
+                    <p>IF YOU WANT TO CONTINUE<BR/>GO TO THE LOGIN</p>
+                </div> 
+        <section class="sectionGaming">
+                 <h1>Section</h1>
+                 <p>Here are 3 categories is your choice what you wanna to become.<br></p>
+
+                <div class="row">
+                    <div class="gaming">
+                        <h3>Profesional</h3>
+                        <p>These players are the best of the best in their preferred games and participate in international competitions.<br />
+                            They are paid to play their games and can earn large sums of money from prizes and sponsorships. To reach this level, professional <br />
+                            players train and focus on improving their gaming skills, collaborating with other players and specialized coaches. Professional players <br />
+                            can also be public figures and can be involved in promoting games and online gaming brands.</p>
+                    </div>
+                    <div class="gaming">
+                        <h3>Intermediant</h3>
+                        <p>These players are passionate about online games and play regularly to improve their skills and participate in local or regional competitions.<br />
+                            They can be members of online gaming teams and train and collaborate with other players to improve their performance. Depending on their level of performance,<br />
+                            intermediate players can win cash prizes and other rewards, as well as recognition in the online gaming community.</p>
+                    </div>
+                    <div class="gaming">
+                        <h3>Amateur</h3>
+                        <p>These players play online games for fun and relaxation, without necessarily having an interest in competition or financial gain.<br />
+                            They may play in their free time or during breaks from work or school and can choose games based on personal preferences,<br /> 
+                            without being restricted by their skills. Although they are not professionals, amateur players can be very skilled in their <br /> 
+                            favorite games and can spend a lot of time playing and exploring different features of the games.</p>
+                    </div>
+                </div>
+           </section>
+           <!-- section international -->
+           <section class="International">
+
+                <h1>International tour</h1>
+                <p>We'll have player and game statistics coming soon, but for now you can just send us feedback <br />
+                    and tell us what you think of the competitive or international tournament.<br></p>
+                
+            <div class="row">
+                    <div class="competitive">
+                        <img src="Photo/esp1.jpg">
+                            <div class="layer">
+                                <a href="Feedback.aspx" alt="website"><h3>Tokyo</h3></a>
+                            </div>
+                    </div>
+                <div class="competitive">
+                    <img src="Photo/esp2.jpg">
+                        <div class="layer">
+                            <a href="Feedback.aspx" alt="website"><h3>New York</h3></a>
+                        </div>
+                </div>
+                
+                <div class="competitive">
+                    <img src="Photo/esp3.jpg">
+                        <div class="layer">
+                            <a href="Feedback.aspx" alt="website"><h3>Berlin</h3></a>
+                        </div>
+                </div>
+            </div>
+           </section>
+
+        <!-- Footer --> 
+
+       <footer class="footer-distributed">
+      <div class="footer-left">
+        <h2>Game Store</h2>
+
+        <p class="footer-links">
+          <a href="Home.aspx" class="link-1">HOME</a>
+          
+          <a href="Login.aspx">LOGIN</a>
+        
+          <a href="Shop.aspx">SHOP</a>
+                    
+          <a href="Feedback.aspx">FEEDBACK</a>
+        </p>
+
+        <p class="footer-company-name">GameStore © 2023</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Str Principala nr 333</span> Targu Mures</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+40 757 123 345</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="#">GameStore@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">    
+        <p class="footer-company-about">
+            <span></span>
+          If you want, you can follow us on the social <br/> networks below where you can find us
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.github.com/" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+
+    </footer>
+    </form>
+
+</body>
+</html>
